@@ -1,4 +1,6 @@
-Executive Summary:
+Postmortem Report: Nginx Config Inconsistency Causes System Outage
+
+Issue Summary:
 On 04/05/23 at about 12:00GMT , our platform experienced a system outage that lasted for 2hours. Investigation revealed that the cause of the outage was an inconsistency in the Nginx configuration files. This report details the incident, its root cause, impact, and recovery, as well as recommendations to prevent a similar occurrence in the future.
 
 Incident:
@@ -25,4 +27,6 @@ The incident revealed several areas that we need to improve our processes to pre
 4. Incident Response: We need to review our incident response process and make improvements to ensure a more efficient and effective response to future incidents.
 
 Conclusion:
-In conclusion, the Nginx configuration inconsistency was the root cause of the system outage. After identifying the root cause and resolving the issue, we implemented several recommendations to prevent similar occurrences in the future. We continue to focus on improving our processes, fine-tuning our monitoring systems, and engaging a cross-functional team to prevent system outages and maintain high availability for our customers.
+In conclusion, the Nginx configuration inconsistency was the root cause of the system outage. After identifying the root cause and resolving the issue, we implemented several recommendations to prevent similar occurrences in the future.
+
+written by Emmanuel Ukeme
