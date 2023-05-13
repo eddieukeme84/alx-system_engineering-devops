@@ -6,6 +6,6 @@ exec { 'fix_typo_1':
 }
 
 exec { 'fix_typo_2':
-  command => "sed -i 's/phpp/php/g' /var/www/html/wp-settings.php",
+  command => "sed -i 's/phpp/php/g' /var/www/html/index.php",
   path    => '/usr/bin',
 }
