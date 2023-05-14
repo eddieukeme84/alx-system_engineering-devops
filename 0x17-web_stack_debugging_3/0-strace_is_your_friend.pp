@@ -1,11 +1,6 @@
-# 0. Strace is your friend
+# Fix PHP file typo mistake in a LAMP wordpress setup
 
-exec { 'fix_typo_1':
-  command => "sed -i 's/phpp/php/g' /var/www/html/wp-settings.php",
-  path    => '/bin',
-}
-
-exec { 'fix_typo_2':
-  command => "sed -i 's/phpp/php/g' /var/www/html/index.php",
-  path    => '/usr/bin',
+exec {'correct typo':
+  provider => shell,
+  command  => "sed -i 's/phpp/php/' /var/www/html/wp-settings.php"
 }
