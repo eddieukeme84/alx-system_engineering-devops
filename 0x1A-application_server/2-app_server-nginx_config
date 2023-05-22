@@ -10,11 +10,11 @@ server {
         server_name _;
 
         location / {
-                add_header X-Served-By 148073-web-01;
+                add_header X-Served-By 140006-web-01;
         }
 
         location /hbnb_static {
-                add_header X-Served-By 148073-web-01;
+                add_header X-Served-By 140006-web-01;
                 alias /data/web_static/current;
         }
 
