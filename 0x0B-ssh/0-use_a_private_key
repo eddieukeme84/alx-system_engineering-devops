@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
-# Connects to a server using an identity file
-
-ssh -i ~/.ssh/school ubuntu@100.25.157.16
+#A script using ssh to connect to a server using the private key
+ssh ubuntu@52.86.110.26 -i ~/.ssh/id_rsa
